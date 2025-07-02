@@ -1,14 +1,15 @@
     body {
+      font-family: sans-serif;
       position: relative; margin: 0;
       height: 100vh; overflow: hidden;
-      background: #f8f8ff; display: flex;
+      background:blue; display: flex;
       align-items: center; justify-content: center;
-      font-family: sans-serif;
+      
     }
     .message {
       position: absolute;
       z-index: 10;
-      font-size: 2rem;
+      font-size: 40px;
       color: #444;
     }
     .petal {
