@@ -1,0 +1,25 @@
+    body {
+      position: relative; margin: 0;
+      height: 100vh; overflow: hidden;
+      background: #f8f8ff; display: flex;
+      align-items: center; justify-content: center;
+      font-family: sans-serif;
+    }
+    .message {
+      position: absolute;
+      z-index: 10;
+      font-size: 2rem;
+      color: #444;
+    }
+    .petal {
+      position: absolute;
+      width: 2rem; height: 2rem;
+      background: hotpink;
+      border-radius: 50% 50% 50% 50%;
+      opacity: 0.8;
+      animation: floatPetal 8s ease-in-out infinite;
+    }
+    @keyframes floatPetal {
+      0% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+      100% { transform: translate(var(--dx), var(--dy)) rotate(360deg); opacity: 0; }
+    }
